@@ -1,0 +1,33 @@
+<h2>Portfolio</h2>
+<section class="projects">
+    <figure>
+        <img src="/img/mockup.jpg" alt="project-1" />
+        <figcaption>Store Catalog</figcaption>
+    </figure>
+
+    <figure>
+        <img src="/img/portfolio-website.jpg" alt="project-2" />
+        <figcaption>Portfolio Website</figcaption>
+    </figure>
+
+    <figure>
+        <img src="/img/library-mockup.jpg" alt="project-3" />
+        <figcaption>Library</figcaption>
+    </figure>
+
+    <figure>
+        <img src="/img/coffee-shop.jpg" alt="project-4" />
+        <figcaption>Coffee Shop</figcaption>
+    </figure>
+
+    <figure>
+        <img src="/img/banner-ad.jpg" alt="project-5" />
+        <figcaption>Banner Ad</figcaption>
+    </figure>
+
+    <figure>
+        <img src="/img/business-card.jpg" alt="project-6" />
+        <figcaption>Business Card</figcaption>
+    </figure>
+</section>
+

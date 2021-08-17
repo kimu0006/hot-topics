@@ -1,0 +1,206 @@
+/* Color scheme
+
+Background color(body) = #f4d6ce 
+#7A4C37
+#C7531E*/
+*{
+    margin: 0;
+}
+body{
+    background-color: #f4d6ce;
+    font-family: 'Work Sans', Arial, sans-serif;
+    line-height: 1.4rem;
+}
+body figcaption{
+    font-family: 'Bitter', Arial, sans-serif;
+}
+body h2{
+    color: #C7531E;
+}
+header{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.logo{
+    display: block;
+    width: 5rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.desktop-nav{
+    margin-top: 1.5rem;
+    margin-left: -20rem;
+}
+main{
+    margin: 2rem;
+}
+masthead h1{
+    background-image: url(../img/bg-img.jpg);
+}
+nav ul li{
+    list-style-type: none;
+    background-color: #7A4C37;
+}
+nav ul li:hover{
+    background-color: #C7531E;
+}
+nav ul a{
+    text-decoration: none;
+}
+nav ul a li{
+    text-decoration: none;
+    color: white;
+}
+.mobile-tablet-nav li{
+    padding: 0.5rem;
+    text-align: center;
+    margin-top: 1rem;
+    margin-right: 1.7rem;
+    color: white;
+}
+.desktop-nav ul li{
+    display: inline-block;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    width:5rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+masthead h1{
+    margin: 0;
+    text-align: center;
+    padding: 3rem;
+    background-color: #7a3312;
+    opacity: 43%;
+    background-image: url(../img/bg-img.jpg);
+    color: black; 
+}
+
+footer{
+    background-color: #7a3312;
+    opacity: 43%;
+    padding: 2rem;
+    text-align: center; 
+    color: white;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+h2{
+    margin-bottom: 1rem;
+}
+.projects figcaption{
+    text-align: center;
+}
+.vom img{
+    float: right;
+    margin: 1rem;
+}
+.gmo img{
+    float: left;
+    margin: 1rem;
+}
+.world img{
+    float: right;
+    margin: 1rem;
+}
+
+/* --------------------RESPONSIVE DESIGN---------------------- */
+
+/***************************************************
+				Landscape phone and up - 480px
+****************************************************/
+@media only screen and (min-width: 480px){
+   .desktop-nav{
+       display: none;
+   }
+  img{
+      text-align: center;
+   }
+   .projects{
+    display: grid;
+    grid-template-columns: 2fr ;
+    grid-gap: 1rem;
+   }
+   main{
+    margin: 2rem;
+    font-size: 0.75rem;
+   }
+   .article img{
+       max-width: 40%;
+   }
+}
+/***************************************************
+                 600px and up
+****************************************************/
+@media only screen and (min-width: 600px) {
+
+    /*HOME PAGE 600px------------------------------------------*/
+
+}
+/***************************************************
+Custom Media Query - 640px and up
+***************************************************/
+@media only screen and (min-width: 640px){
+  
+    .article img{
+        max-width: 60%;
+    }
+}
+
+/***************************************************
+				 Portrait tablet and up
+****************************************************/
+@media only screen and (min-width: 768px){
+     .mobile-tablet-nav ul{
+         display: grid;
+         grid-template-columns: 2fr 2fr;
+     }
+     .projects{
+        display: grid;
+        grid-template-columns: 2fr 2fr ;
+        grid-gap: 1rem;
+     }
+     main{
+         font-size: 1rem;
+     }
+}
+/***************************************************
+			 Landscape desktop (17”) and up
+****************************************************/
+
+@media only screen and (min-width: 960px) {
+
+}
+
+/***************************************************
+			 Widescreen desktop (24”) and up
+***************************************************/
+
+@media only screen and (min-width: 1160px){
+      .mobile-tablet-nav{
+          display: none;
+      }
+      .desktop-nav{
+          display: inline-block;
+      }
+      .projects{
+          display: grid;
+          grid-template-columns: 2fr 2fr 2fr;
+          grid-gap: 1rem;
+      }
+      .desktop-nav{
+        text-align: center;
+     }
+     main{
+        margin-left: 7rem;
+        margin-right: 7rem;
+        line-height: 1.6rem;
+        font-size: 1.25rem;
+        }
+}

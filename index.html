@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <!-- my stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/daisy 2.png" alt="logo">
+
+        <nav class="desktop-nav">
+            <ul>
+                <a href="#">
+                    <li id="home">Home</li>
+                </a>
+                    
+                <a href="#">
+                    <li id="portfolio">Portfolio</li>
+                </a>
+                
+            </ul>
+        </nav>
+    </header>
+ 
+    <masthead>
+        <h1>Hot Topics</h1>
+    </masthead>
+
+    <nav class="mobile-tablet-nav">
+        <ul>
+            <a href="#">
+                <li id="mobile-home">Home</li>
+            </a>
+                    
+            <a href="#">
+                <li id="mobile-portfolio">Portfolio</li>
+            </a>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="main-content">
+            <p>Select the page you want to view</p>
+        </div>
+    </main>
+    
+    <footer>
+        © All Reserved 2021
+    </footer>
+</body>
+</html>
+
+     <!-- Home (Dektop) -->
+    <script>$(document).ready(function() {
+        $("#home").click(function() {
+            $("#main-content").load("/partials/home.txt");
+        });
+    });</script>
+
+    <!-- Home (mobile) -->
+    <script>$(document).ready(function() {
+    $("#mobile-home").click(function() {
+        $("#main-content").load("/partials/home.txt");
+    });
+    });</script>
+
+     <!-- Portfolio (Dektop) -->
+     <script>$(document).ready(function() {
+        $("#portfolio").click(function() {
+            $("#main-content").load("/partials/portfolio.txt");
+        });
+    });</script>
+
+    <!-- Portfolio (mobile) -->
+    <script>$(document).ready(function() {
+    $("#mobile-portfolio").click(function() {
+        $("#main-content").load("/partials/portfolio.txt");
+    });
+    });</script>

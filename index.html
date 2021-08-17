@@ -13,6 +13,34 @@
 
     <!-- my stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    
+      <!-- Home (Dektop) -->
+    <script>$(document).ready(function() {
+        $("#home").click(function() {
+            $("#main-content").load("/partials/home.txt");
+        });
+    });</script>
+
+    <!-- Home (mobile) -->
+    <script>$(document).ready(function() {
+    $("#mobile-home").click(function() {
+        $("#main-content").load("/partials/home.txt");
+    });
+    });</script>
+
+     <!-- Portfolio (Dektop) -->
+     <script>$(document).ready(function() {
+        $("#portfolio").click(function() {
+            $("#main-content").load("/partials/portfolio.txt");
+        });
+    });</script>
+
+    <!-- Portfolio (mobile) -->
+    <script>$(document).ready(function() {
+    $("#mobile-portfolio").click(function() {
+        $("#main-content").load("/partials/portfolio.txt");
+    });
+    });</script>
 
 
 
@@ -63,30 +91,4 @@
 </body>
 </html>
 
-     <!-- Home (Dektop) -->
-    <script>$(document).ready(function() {
-        $("#home").click(function() {
-            $("#main-content").load("/partials/home.txt");
-        });
-    });</script>
-
-    <!-- Home (mobile) -->
-    <script>$(document).ready(function() {
-    $("#mobile-home").click(function() {
-        $("#main-content").load("/partials/home.txt");
-    });
-    });</script>
-
-     <!-- Portfolio (Dektop) -->
-     <script>$(document).ready(function() {
-        $("#portfolio").click(function() {
-            $("#main-content").load("/partials/portfolio.txt");
-        });
-    });</script>
-
-    <!-- Portfolio (mobile) -->
-    <script>$(document).ready(function() {
-    $("#mobile-portfolio").click(function() {
-        $("#main-content").load("/partials/portfolio.txt");
-    });
-    });</script>
+   
